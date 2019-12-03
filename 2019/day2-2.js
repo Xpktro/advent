@@ -26,7 +26,7 @@ const execute = (program) => {
     [...program])[0];
 };
 
-module.exports = (year, day, version) =>
+module.exports = (year, day) =>
   inputData(day, year)
     .then(data => data.trim().split(',').map(Number))
     .then(program => {

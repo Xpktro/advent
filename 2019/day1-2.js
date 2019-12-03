@@ -5,7 +5,7 @@ const calculateFuel = masses =>
 
 const sum = masses => masses.reduce((sum, x) => x + sum, 0);
 
-module.exports = (year, day, version) =>
+module.exports = (year, day) =>
   inputData(day, year)
     .then(data => data.trim().split('\n').map(Number))
     .then(calculateFuel)

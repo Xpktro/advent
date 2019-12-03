@@ -1,6 +1,6 @@
 const { inputData } = require('../util/advent');
 
-module.exports = (year, day, version) =>
+module.exports = (year, day) =>
   inputData(day, year)
     .then(data => data.trim().split('\n').map(Number))
     .then(data => data.map(number => Math.floor(number / 3) - 2))

@@ -62,7 +62,7 @@ const intersect = (
   return x === 0 && y === 0 ? null : { x, y };
 };
 
-module.exports = (year, day, version) =>
+module.exports = (year, day) =>
   inputData(day, year)
     .then(data => data.trim().split('\n').map(line => line.split(',')))
     .then(([firstWire, secondWire]) => {
