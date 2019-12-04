@@ -32,6 +32,6 @@ module.exports = (year, day) =>
 
           return previousState;
         },
-        program)
+        program)[0];
     })
     .then(console.log);
